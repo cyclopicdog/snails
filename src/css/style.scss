@@ -1,0 +1,72 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-family: sans-serif;
+    font-size: 16px;
+}
+
+body {
+    margin: 0;
+}
+
+.race-track {
+    width: 600px;
+    height: 424.5px;
+    margin: 60px;
+    display: flex;
+    flex-flow: column nowrap;
+    background-color: black;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+
+    &__lane {
+        width: 100%;
+        background-color: rgba($color: lightgrey, $alpha: 0.99);
+        border-top: 2px solid black;
+        border-bottom: 2px solid black;
+    }
+    &__start {
+        width: 80px;
+        height: 420.5px;
+
+        position: fixed;
+        left: 140px;
+        border-left: 2px solid black;
+    }
+    &__finish {
+        width: 80px;
+        height: 420.5px;
+        position: fixed;
+        left: 580px;
+        background-color: gold;
+        border-top: 2px solid black;
+        border-bottom: 2px solid black;
+        border-left: 2px solid black;
+    }
+}
+
+.snail-racer {
+    width: 80px;
+}
+
+.snail {
+    width: 100%;
+    height: auto;
+    transition: transform 1s linear;
+}
+
+.snail__body {
+    fill: #6db302;
+}
+
+.snail__shell {
+    fill: red;
+}
+
+.snail-racer__name {
+    font-weight: bold;
+    text-align: center;
+    font-size: 80%;
+}
